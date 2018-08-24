@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Authors>Elias Fernando Navarro Gallegos</Authors>
+    <Company>ENA</Company>
+    <Description>EnaBricks.DataBricks is a Data component library for deserializing from Sql server to a DTO using XmlSerializer and also a Sql command helper.</Description>
+    <PackageProjectUrl>https://github.com/ena-mx/bricks</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/ena-mx/bricks/blob/master/LICENSE</PackageLicenseUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.5.1" />
+  </ItemGroup>
+
+</Project>
