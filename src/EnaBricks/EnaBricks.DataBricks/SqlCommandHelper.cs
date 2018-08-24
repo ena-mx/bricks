@@ -47,9 +47,9 @@
             }
         }
 
-        public async Task<object> ExecuteScalar(string cmdText, bool isStoreProcedure) => await ExecuteScalar(cmdText, isStoreProcedure, Array.Empty<SqlParameter>());
+        public async Task<object> ExecuteScalarAsync(string cmdText, bool isStoreProcedure) => await ExecuteScalarAsync(cmdText, isStoreProcedure, Array.Empty<SqlParameter>());
 
-        public async Task<object> ExecuteScalar(string cmdText, bool isStoreProcedure, SqlParameter[] parameters)
+        public async Task<object> ExecuteScalarAsync(string cmdText, bool isStoreProcedure, SqlParameter[] parameters)
         {
             using (SqlConnection connection = new SqlConnection(_connectionStringName))
             {
