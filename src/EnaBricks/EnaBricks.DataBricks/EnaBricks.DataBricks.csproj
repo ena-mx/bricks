@@ -2,12 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Elias Fernando Navarro Gallegos</Authors>
     <Company>ENA</Company>
     <Description>EnaBricks.DataBricks is a Data component library for deserializing from Sql server to a DTO using XmlSerializer and also a Sql command helper.</Description>
     <PackageProjectUrl>https://github.com/ena-mx/bricks</PackageProjectUrl>
     <PackageLicenseUrl>https://github.com/ena-mx/bricks/blob/master/LICENSE</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/ena-mx/bricks/tree/master/src/EnaBricks/EnaBricks.DataBricks</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
