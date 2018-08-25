@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Elias Fernando Navarro Gallegos</Authors>
+    <Company>ENA</Company>
+    <Description>EnaBricks.Generics is a component library for specialize collections. It contains the Generic Option class for reducing code complexity, avoid null checks and code branching.</Description>
+    <PackageLicenseUrl>https://github.com/ena-mx/bricks/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/ena-mx/bricks</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ena-mx/bricks/tree/master/src/EnaBricks/EnaBricks.Generics</RepositoryUrl>
+  </PropertyGroup>
+
+</Project>

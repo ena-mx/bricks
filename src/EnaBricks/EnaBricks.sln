@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2003
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnaBricks.DataBricks", "EnaBricks.DataBricks\EnaBricks.DataBricks.csproj", "{7264A988-0DB6-4FDE-8B52-7BCF6F296EF4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnaBricks.DataBricks", "EnaBricks.DataBricks\EnaBricks.DataBricks.csproj", "{7264A988-0DB6-4FDE-8B52-7BCF6F296EF4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnaBricks.RestBricks", "EnaBricks.RestBricks\EnaBricks.RestBricks.csproj", "{E5546E79-E104-480D-B506-3C2CC65B81D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnaBricks.WorkflowBricks", "EnaBricks.WorkflowBricks\EnaBricks.WorkflowBricks.csproj", "{8E65C257-A261-427B-96DF-57D31F253EAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnaBricks.Generics", "EnaBricks.Generics\EnaBricks.Generics.csproj", "{F39C7F87-EDE0-4E8E-8F47-E5C9B4519A84}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{7264A988-0DB6-4FDE-8B52-7BCF6F296EF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7264A988-0DB6-4FDE-8B52-7BCF6F296EF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7264A988-0DB6-4FDE-8B52-7BCF6F296EF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5546E79-E104-480D-B506-3C2CC65B81D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5546E79-E104-480D-B506-3C2CC65B81D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5546E79-E104-480D-B506-3C2CC65B81D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5546E79-E104-480D-B506-3C2CC65B81D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E65C257-A261-427B-96DF-57D31F253EAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E65C257-A261-427B-96DF-57D31F253EAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E65C257-A261-427B-96DF-57D31F253EAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E65C257-A261-427B-96DF-57D31F253EAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F39C7F87-EDE0-4E8E-8F47-E5C9B4519A84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F39C7F87-EDE0-4E8E-8F47-E5C9B4519A84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F39C7F87-EDE0-4E8E-8F47-E5C9B4519A84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F39C7F87-EDE0-4E8E-8F47-E5C9B4519A84}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

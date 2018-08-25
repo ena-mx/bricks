@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Product>Elias Fernando Navarro Gallegos</Product>
+    <Company>ENA</Company>
+    <PackageLicenseUrl>https://github.com/ena-mx/bricks/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/ena-mx/bricks</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ena-mx/bricks/tree/master/src/EnaBricks/EnaBricks.WorkflowBricks</RepositoryUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>Component library for building business Workflows and serialize errors with Json serializer.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+  </ItemGroup>
+
+</Project>

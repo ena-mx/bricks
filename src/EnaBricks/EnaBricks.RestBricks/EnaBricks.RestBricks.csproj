@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Company>ENA</Company>
+    <Product>Elias Fernando Navarro Gallegos</Product>
+    <PackageLicenseUrl>https://github.com/ena-mx/bricks/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/ena-mx/bricks</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ena-mx/bricks/tree/master/src/EnaBricks/EnaBricks.RestBricks</RepositoryUrl>
+    <Description>Component library for building Restful resources</Description>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+  </ItemGroup>
+
+</Project>
