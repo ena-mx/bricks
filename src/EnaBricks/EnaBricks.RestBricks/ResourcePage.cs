@@ -34,32 +34,55 @@
         [JsonIgnore]
         public string Uri { get; set; }
 
-        [JsonIgnore]
-        public int TotalRows { get; set; }
-
-        [JsonIgnore]
-        public int PageRowsCount { get; set; }
-
         public IEnumerable<Link> LinksCollection()
         {
             string urlTemplate = Uri + "offset={0}&limit={1}";
 
-            int newOffset = Offset + PageRowsCount;
-
-            yield return new Link("self", "GET", string.Format(urlTemplate, Offset, Limit));
+            int newOffset = Offset + Count;
+            yield return new Link
+            {
+                Name = "self",
+                Method = "GET",
+                Url = string.Format(urlTemplate, Offset, Limit)
+            };
 
             if (Offset > 0)
-                yield return new Link("first", "GET", string.Format(urlTemplate, 0, Limit));
-
+            {
+                yield return new Link
+                {
+                    Name = "first",
+                    Method = "GET",
+                    Url = string.Format(urlTemplate, 0, Limit)
+                };
+            }
             if (Offset - Limit >= 0)
-                yield return new Link("prev", "GET", string.Format(urlTemplate, Offset - Limit, Limit));
-
-            if (Offset + Limit <= TotalRows)
-                yield return new Link("next", "GET", string.Format(urlTemplate, newOffset, Limit));
-
-            if (TotalRows - Limit > 0 && newOffset < TotalRows)
-                yield return new Link("last", "GET", string.Format(urlTemplate,
-                    ((int)Math.Floor((double)TotalRows / (double)Limit) * Limit), Limit));
+            {
+                yield return new Link
+                {
+                    Name = "prev",
+                    Method = "GET",
+                    Url = string.Format(urlTemplate, Offset - Limit, Limit)
+                };
+            }
+            if (Offset + Limit <= Total)
+            {
+                yield return new Link
+                {
+                    Name = "next",
+                    Method = "GET",
+                    Url = string.Format(urlTemplate, newOffset, Limit)
+                };
+            }
+            if (Total - Limit > 0 && newOffset < Total)
+            {
+                yield return new Link
+                {
+                    Name = "last",
+                    Method = "GET",
+                    Url = string.Format(urlTemplate,
+                    ((int)Math.Floor((double)Total / (double)Limit) * Limit), Limit)
+                };
+            }
         }
     }
 }
