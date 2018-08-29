@@ -5,7 +5,7 @@
     using System.Collections.Generic;
     using System.Linq;
 
-    public abstract class ResourcePage<T> : ICreateLinks
+    public sealed class ResourcePage<T> : ICreateLinks
     {
         [JsonProperty(Order = 0)]
         public int Offset { get; set; }
