@@ -9,7 +9,7 @@
     <RepositoryUrl>https://github.com/ena-mx/bricks/tree/master/src/EnaBricks/EnaBricks.RestBricks</RepositoryUrl>
     <Description>Component library for building Restful resources</Description>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.1.0</Version>
+    <Version>1.2.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
