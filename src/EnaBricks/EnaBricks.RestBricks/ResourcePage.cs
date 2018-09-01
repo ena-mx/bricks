@@ -20,7 +20,7 @@
         public int Total { get; set; }
 
         [JsonProperty(Order = 4)]
-        public int CurrentPage => ((int)Math.Ceiling((double)Offset / (double)Limit));
+        public int CurrentPage => ((int)Math.Ceiling((double)Offset / (double)Limit)) + 1;
 
         [JsonProperty(Order = 5)]
         public int PagesCount => ((int)Math.Ceiling((double)Total / (double)Limit));
